@@ -1,3 +1,10 @@
+Intructions on this Repo
+Heap size error run this command line before run jupyter notebook on command line
+export PYSPARK_SUBMIT_ARGS=' --conf spark.sql.shuffle.partitions=700 --conf spark.default.parallelism=700 --driver-memory 30g --driver-cores 6 --executor-memory 30g --executor-cores 6 pyspark-shell'
+
+ERROR PythonRunner: Python worker exited unexpectedly (crashed) java.net.SocketException: Connection reset
+Try to run several times
+
 # Fine_Grained_Time_Serries_Forecasting_Leverage_Apache_Spark_FBProphet
 
 Retailers are utilizing the advancements in time series forecasting to generate more dependable demand forecasts. However, the main challenge lies in producing these forecasts promptly and with enough detail to enable precise adjustments to product inventories. By using Apache Spark and Facebook Prophet, numerous businesses facing such challenges are able to surpass the scalability and accuracy constraints of past solutions. 
